@@ -1,8 +1,8 @@
-function aerosol = kohler(model, aerosol)
+function aerosol = kohler_suite(model, aerosol)
 
 %/////////////////////////////////////////////////////////////////////////%
 %Function receives aerosol data structure and string for model name and
-%returns critical point of köhler curve in the aerosol structure.
+%returns critical point of kÃ¶hler curve in the aerosol structure.
 %/////////////////////////////////////////////////////////////////////////%
 
 %some physical constants
@@ -18,7 +18,7 @@ V_w         = Mw/rhow;
 wet_radius_end  = 10e-6;
 wet_radius_bins = 300;
 
-%Köhler A coefficent, used throughout
+%KÃ¶hler A coefficent, used throughout
 %A = 2 * Mw * surf_tens_w / R / T / rhow;
 %--------------------------------------------------------------------------
 switch model
